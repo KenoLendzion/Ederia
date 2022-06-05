@@ -9,4 +9,4 @@ Suggestions and constructive criticism are allways welcome.
 
 
 Very first version of a database. It's kept simple to reduce complexity but it should not be a problem to expand at a later point in time.
-![image](https://user-images.githubusercontent.com/23700090/172070501-ff762b16-cd1a-4b7b-97aa-3eed04ee09cc.png)
+![image](https://user-images.githubusercontent.com/23700090/172070591-7a6d38c0-6706-4e1b-914d-14a29652c9d7.png)
