@@ -14,6 +14,10 @@ namespace Application.Recipes.Commands.CreateRecipe
     public class CreateRecipeCommandHandler : IRequestHandler<CreateRecipeCommand, Guid> 
     {
         private readonly IApplicationDbContext _context;
+        public CreateRecipeCommandHandler(IApplicationDbContext context)
+        {
+                _context = context; 
+        }
 
         public async Task<Guid> Handle(CreateRecipeCommand request, CancellationToken cancellationToken)
         {
