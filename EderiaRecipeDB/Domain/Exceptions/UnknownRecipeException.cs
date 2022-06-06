@@ -10,6 +10,7 @@ namespace Domain.Exceptions
     {
         public UnknownRecipeException(Recipe recipe) : base($"Recipe {recipe.Id} doens't exist.")
         {
+
         }
     }
 }
