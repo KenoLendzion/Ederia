@@ -16,6 +16,11 @@ namespace Application.RecipeIngridients.Commands.CreateRecipeIngridient
     {
         private readonly IApplicationDbContext _context;
 
+        public CreateRecuoeIngridientHandler(IApplicationDbContext context)
+        {
+            _context = context; 
+        }
+
         public async Task<Guid> Handle(CreateRecipeIngridientCommand request, CancellationToken cancellationToken)
         {
             var entity = new RecipeIngridient
