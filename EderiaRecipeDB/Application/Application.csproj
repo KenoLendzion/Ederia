@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Common\Behaviours\" />
-    <Folder Include="Common\Exceptions\" />
     <Folder Include="Common\Mappings\" />
     <Folder Include="Common\Models\" />
     <Folder Include="Common\Security\" />
@@ -36,7 +35,6 @@
     <Folder Include="RecipeSteps\Queries\Get\" />
     <Folder Include="RecipeSteps\Queries\Models\" />
     <Folder Include="RecipeSteps\Queries\Update\" />
-    <Folder Include="Recipes\Commands\DeleteRecipe\" />
     <Folder Include="Recipes\Commands\UpdateRecipe\" />
     <Folder Include="Recipes\EventHandlers\" />
     <Folder Include="Recipes\Queries\Create\" />
