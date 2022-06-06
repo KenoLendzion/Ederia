@@ -28,7 +28,6 @@
     <Folder Include="RecipeIngridients\Queries\Get\" />
     <Folder Include="RecipeIngridients\Queries\Models\" />
     <Folder Include="RecipeIngridients\Queries\Update\" />
-    <Folder Include="RecipeSteps\Commands\CreateRecipeStep\" />
     <Folder Include="RecipeSteps\Commands\DeleteRecipeStep\" />
     <Folder Include="RecipeSteps\Commands\UpdateRecipeStep\" />
     <Folder Include="RecipeSteps\EventHandlers\" />
