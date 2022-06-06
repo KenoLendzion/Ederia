@@ -21,6 +21,12 @@ namespace Application.RecipeSteps.Commands.CreateRecipeStep
     public class CreateRecipeStepCommandHandler : IRequestHandler<CreateRecipeStepCommand, Guid>
     {
         private readonly IApplicationDbContext _context;
+
+        public CreateRecipeStepCommandHandler(IApplicationDbContext context)
+        {
+            _context = context; 
+        }
+
         public async Task<Guid> Handle(CreateRecipeStepCommand request, CancellationToken cancellationToken)
         {
             var entity = new RecipeStep
