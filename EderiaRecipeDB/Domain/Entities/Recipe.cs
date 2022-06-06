@@ -5,8 +5,8 @@ namespace Domain.Entities
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public string Description { get; set; }
-        public int KcalPerPortion { get; set; }
-        public int CookingTimeInMinutes { get; set; }   
+        public string? Description { get; set; }
+        public int? KcalPerPortion { get; set; }
+        public int? CookingTimeInMinutes { get; set; }   
     }
 }
