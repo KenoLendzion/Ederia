@@ -14,6 +14,10 @@ namespace Application.Ingridients.Commands.CreateIngridient
     public class CreateIngridientCommandHandler : IRequestHandler<CreateIngridientCommand, Guid>
     {
         private readonly IApplicationDbContext _context;
+        public CreateIngridientCommandHandler(IApplicationDbContext context)
+        {
+            _context = context;
+        }
         public async Task<Guid> Handle(CreateIngridientCommand request, CancellationToken cancellationToken)
         {
             var entity = new Ingridient
