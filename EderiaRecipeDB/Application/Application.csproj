@@ -9,11 +9,9 @@
   <ItemGroup>
     <Folder Include="Common\Behaviours\" />
     <Folder Include="Common\Exceptions\" />
-    <Folder Include="Common\Interfaces\" />
     <Folder Include="Common\Mappings\" />
     <Folder Include="Common\Models\" />
     <Folder Include="Common\Security\" />
-    <Folder Include="Ingridients\Commands\CreateIngridient\" />
     <Folder Include="Ingridients\Commands\DeleteIngridient\" />
     <Folder Include="Ingridients\Commands\UpdateIngridient\" />
     <Folder Include="Ingridients\EventHandlers\" />
@@ -22,7 +20,6 @@
     <Folder Include="Ingridients\Queries\Create\" />
     <Folder Include="Ingridients\Queries\Delete\" />
     <Folder Include="Ingridients\Queries\Update\" />
-    <Folder Include="RecipeIngridients\Commands\CreateRecipeIngridient\" />
     <Folder Include="RecipeIngridients\Commands\DeleteRecipeIngridient\" />
     <Folder Include="RecipeIngridients\Commands\UpdateRecipeIngridient\" />
     <Folder Include="RecipeIngridients\EventHandlers\" />
@@ -40,7 +37,6 @@
     <Folder Include="RecipeSteps\Queries\Get\" />
     <Folder Include="RecipeSteps\Queries\Models\" />
     <Folder Include="RecipeSteps\Queries\Update\" />
-    <Folder Include="Recipes\Commands\CreateRecipe\" />
     <Folder Include="Recipes\Commands\DeleteRecipe\" />
     <Folder Include="Recipes\Commands\UpdateRecipe\" />
     <Folder Include="Recipes\EventHandlers\" />
@@ -49,6 +45,16 @@
     <Folder Include="Recipes\Queries\Get\" />
     <Folder Include="Recipes\Queries\Models\" />
     <Folder Include="Recipes\Queries\Update\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.0.2" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
 </Project>
