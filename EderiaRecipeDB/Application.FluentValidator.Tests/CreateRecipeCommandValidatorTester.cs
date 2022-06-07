@@ -28,6 +28,5 @@ namespace Application.FluentValidation.Tests
             var result = validator.TestValidate(model);
             result.ShouldHaveValidationErrorFor(model => model.Name);
         }
-
     }
 }
