@@ -7,8 +7,7 @@ namespace Application.Ingridients.Commands.CreateIngridient
 {
     public  record CreateIngridientCommand : IRequest<int>
     {
-        public int Id { get; set; }
-        public string? Name { get; set; }
+        public string Name { get; set; }
     }
 
     public class CreateIngridientCommandHandler : IRequestHandler<CreateIngridientCommand, int>
@@ -22,7 +21,6 @@ namespace Application.Ingridients.Commands.CreateIngridient
         {
             var entity = new Ingridient
             {
-                Id = request.Id,
                 Name = request.Name,
             };
 
