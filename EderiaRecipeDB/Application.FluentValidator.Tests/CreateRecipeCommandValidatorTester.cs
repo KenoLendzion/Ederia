@@ -22,7 +22,6 @@ namespace Application.FluentValidation.Tests
         {
             var model = new CreateRecipeCommand
             {
-                Id = Guid.NewGuid(),
                 Name = "abcdefghijcdefghijababcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghij"
             };
             var result = validator.TestValidate(model);
