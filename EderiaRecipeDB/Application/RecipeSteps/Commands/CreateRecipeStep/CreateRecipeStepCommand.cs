@@ -12,7 +12,6 @@ namespace Application.RecipeSteps.Commands.CreateRecipeStep
 {
     public record CreateRecipeStepCommand : IRequest<int>
     {
-        public int Id { get; set; }
         public int RecipeId { get; set; }
         public string InstructionText { get; set; }
         public int SequenceNumber { get; set; }
@@ -31,7 +30,6 @@ namespace Application.RecipeSteps.Commands.CreateRecipeStep
         {
             var entity = new RecipeStep
             {
-                Id = request.Id,
                 RecipeId = request.RecipeId,
                 InstructionText = request.InstructionText,
                 SequenceNumber = request.SequenceNumber
