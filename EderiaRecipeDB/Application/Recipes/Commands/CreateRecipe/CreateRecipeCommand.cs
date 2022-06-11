@@ -7,8 +7,7 @@ namespace Application.Recipes.Commands.CreateRecipe
 {
     public record CreateRecipeCommand : IRequest<int>
     {
-        public int Id { get; set; }
-        public string? Name { get; set; }
+        public string Name { get; set; } 
     }
 
     public class CreateRecipeCommandHandler : IRequestHandler<CreateRecipeCommand, int> 
@@ -23,7 +22,6 @@ namespace Application.Recipes.Commands.CreateRecipe
         {
             var entity = new Recipe
             {
-                Id = request.Id,
                 Name = request.Name,
             };
 
