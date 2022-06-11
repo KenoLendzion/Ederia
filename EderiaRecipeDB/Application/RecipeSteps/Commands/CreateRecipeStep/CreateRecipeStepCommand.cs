@@ -10,15 +10,15 @@ using Domain.Events;
 
 namespace Application.RecipeSteps.Commands.CreateRecipeStep
 {
-    public record CreateRecipeStepCommand : IRequest<Guid>
+    public record CreateRecipeStepCommand : IRequest<int>
     {
-        public Guid Id { get; set; }
-        public Guid RecipeId { get; set; }
+        public int Id { get; set; }
+        public int RecipeId { get; set; }
         public string InstructionText { get; set; }
         public int SequenceNumber { get; set; }
     }
 
-    public class CreateRecipeStepCommandHandler : IRequestHandler<CreateRecipeStepCommand, Guid>
+    public class CreateRecipeStepCommandHandler : IRequestHandler<CreateRecipeStepCommand, int>
     {
         private readonly IApplicationDbContext _context;
 
@@ -27,7 +27,7 @@ namespace Application.RecipeSteps.Commands.CreateRecipeStep
             _context = context; 
         }
 
-        public async Task<Guid> Handle(CreateRecipeStepCommand request, CancellationToken cancellationToken)
+        public async Task<int> Handle(CreateRecipeStepCommand request, CancellationToken cancellationToken)
         {
             var entity = new RecipeStep
             {
