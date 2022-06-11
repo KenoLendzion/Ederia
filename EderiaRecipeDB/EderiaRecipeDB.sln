@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{5CF2D8C0-12DC-4A76-A715-867B12C740B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.FluentValidator.Tests", "Application.FluentValidator.Tests\Application.FluentValidator.Tests.csproj", "{6496B83C-A485-45AD-B0D0-EF7CA46EE61D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.FluentValidator.Tests", "Application.FluentValidator.Tests\Application.FluentValidator.Tests.csproj", "{6496B83C-A485-45AD-B0D0-EF7CA46EE61D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -11,7 +11,6 @@
     <Folder Include="Common\Mappings\" />
     <Folder Include="Common\Models\" />
     <Folder Include="Common\Security\" />
-    <Folder Include="Ingridients\Commands\DeleteIngridient\" />
     <Folder Include="Ingridients\Commands\UpdateIngridient\" />
     <Folder Include="Ingridients\EventHandlers\" />
     <Folder Include="Ingridients\Queries\Models\" />
