@@ -7,7 +7,7 @@ namespace Application.Recipes.Commands.DeleteRecipe
 {
     public record DeleteRecipeCommand : IRequest
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
     }
 
     public class DeleteRecipeCommandHandler : IRequestHandler<DeleteRecipeCommand>
