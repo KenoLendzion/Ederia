@@ -9,6 +9,7 @@ In general i want to create the backend for a recipe storage. So the recipes cou
 
 Suggestions and constructive criticism are allways welcome. 
 
+Testing: TBD
 
 Very first version of a database. It's kept simple to reduce complexity but it should not be a problem to expand at a later point in time.
 ![image](https://user-images.githubusercontent.com/23700090/172070591-7a6d38c0-6706-4e1b-914d-14a29652c9d7.png)
