@@ -7,7 +7,6 @@ namespace Application.RecipeIngridients.Commands.CreateRecipeIngridient
 {
     public record CreateRecipeIngridientCommand : IRequest<int>
     {
-        public int Id { get; set; }
         public int RecipeId { get; set; }
         public int IngridientId { get; set; }
     }
@@ -25,7 +24,6 @@ namespace Application.RecipeIngridients.Commands.CreateRecipeIngridient
         {
             var entity = new RecipeIngridient
             {
-                Id = request.id,
                 RecipeId = request.RecipeId,
                 IngridientId = request.IngridientId
             };
