@@ -16,32 +16,20 @@
     <Folder Include="Ingridients\EventHandlers\" />
     <Folder Include="Ingridients\Queries\Models\" />
     <Folder Include="Ingridients\Queries\Get\" />
-    <Folder Include="Ingridients\Queries\Create\" />
-    <Folder Include="Ingridients\Queries\Delete\" />
-    <Folder Include="Ingridients\Queries\Update\" />
     <Folder Include="RecipeIngridients\Commands\DeleteRecipeIngridient\" />
     <Folder Include="RecipeIngridients\Commands\UpdateRecipeIngridient\" />
     <Folder Include="RecipeIngridients\EventHandlers\" />
-    <Folder Include="RecipeIngridients\Queries\Create\" />
-    <Folder Include="RecipeIngridients\Queries\Delete\" />
     <Folder Include="RecipeIngridients\Queries\Get\" />
     <Folder Include="RecipeIngridients\Queries\Models\" />
-    <Folder Include="RecipeIngridients\Queries\Update\" />
     <Folder Include="RecipeSteps\Commands\DeleteRecipeStep\" />
     <Folder Include="RecipeSteps\Commands\UpdateRecipeStep\" />
     <Folder Include="RecipeSteps\EventHandlers\" />
-    <Folder Include="RecipeSteps\Queries\Create\" />
-    <Folder Include="RecipeSteps\Queries\Delete\" />
     <Folder Include="RecipeSteps\Queries\Get\" />
     <Folder Include="RecipeSteps\Queries\Models\" />
-    <Folder Include="RecipeSteps\Queries\Update\" />
     <Folder Include="Recipes\Commands\UpdateRecipe\" />
     <Folder Include="Recipes\EventHandlers\" />
-    <Folder Include="Recipes\Queries\Create\" />
-    <Folder Include="Recipes\Queries\Delete\" />
     <Folder Include="Recipes\Queries\Get\" />
     <Folder Include="Recipes\Queries\Models\" />
-    <Folder Include="Recipes\Queries\Update\" />
   </ItemGroup>
 
   <ItemGroup>
