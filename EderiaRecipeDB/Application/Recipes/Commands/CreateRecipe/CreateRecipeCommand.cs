@@ -5,13 +5,13 @@ using MediatR;
 
 namespace Application.Recipes.Commands.CreateRecipe
 {
-    public record CreateRecipeCommand : IRequest<Guid>
+    public record CreateRecipeCommand : IRequest<int>
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string? Name { get; set; }
     }
 
-    public class CreateRecipeCommandHandler : IRequestHandler<CreateRecipeCommand, Guid> 
+    public class CreateRecipeCommandHandler : IRequestHandler<CreateRecipeCommand, int> 
     {
         private readonly IApplicationDbContext _context;
         public CreateRecipeCommandHandler(IApplicationDbContext context)
@@ -19,7 +19,7 @@ namespace Application.Recipes.Commands.CreateRecipe
                 _context = context; 
         }
 
-        public async Task<Guid> Handle(CreateRecipeCommand request, CancellationToken cancellationToken)
+        public async Task<int> Handle(CreateRecipeCommand request, CancellationToken cancellationToken)
         {
             var entity = new Recipe
             {
