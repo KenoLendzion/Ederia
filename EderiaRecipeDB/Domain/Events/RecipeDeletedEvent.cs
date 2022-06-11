@@ -14,6 +14,5 @@ namespace Domain.Events
         {
             this.Recipe = recipe;
         }
-
     }
 }

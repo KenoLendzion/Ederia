@@ -45,5 +45,4 @@ namespace Application.RecipeSteps.Commands.CreateRecipeStep
             return entity.Id;
         }
     }
-
 }
