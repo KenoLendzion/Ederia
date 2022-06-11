@@ -7,7 +7,7 @@ namespace Application.RecipeIngridients.Commands.CreateRecipeIngridient
 {
     public record CreateRecipeIngridientCommand : IRequest<int>
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public int RecipeId { get; set; }
         public int IngridientId { get; set; }
     }
