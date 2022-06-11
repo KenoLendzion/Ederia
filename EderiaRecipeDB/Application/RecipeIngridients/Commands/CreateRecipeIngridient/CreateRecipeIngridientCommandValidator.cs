@@ -6,7 +6,7 @@ namespace Application.RecipeIngridients.Commands.CreateRecipeIngridient
     {
         public CreateRecipeIngridientCommandValidator()
         {
-            RuleFor(v => v.Id).NotEmpty();
+            RuleFor(v => v.id).NotEmpty();
             RuleFor(v => v.RecipeId).NotEmpty();
             RuleFor(v => v.IngridientId).NotEmpty();
         }

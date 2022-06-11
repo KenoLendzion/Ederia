@@ -23,5 +23,6 @@ namespace Domain.Common
         {
             _domainEvents.Clear();
         }
+
     }
 }

@@ -9,12 +9,12 @@ namespace Application.FluentValidation.Tests
     [TestFixture]
     public class CreateRecipeCommandValidatorTester
     {
-        private CreateRecipeCommandValidator _validator;
+        private CreateRecipeCommandValidator validator;
 
         [SetUp]
         public void SetUp()
         {
-            _validator = new CreateRecipeCommandValidator();
+            validator = new CreateRecipeCommandValidator();
         }
 
         [Test]
@@ -25,7 +25,7 @@ namespace Application.FluentValidation.Tests
                 Id = Guid.NewGuid(),
                 Name = "abcdefghijcdefghijababcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghij"
             };
-            var result = _validator.TestValidate(model);
+            var result = validator.TestValidate(model);
             result.ShouldHaveValidationErrorFor(model => model.Name);
         }
     }

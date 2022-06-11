@@ -8,12 +8,12 @@ namespace Application.FluentValidator.Tests
 {
     public class CreateIngridientCommandValidatorTester
     {
-        private CreateIngridientCommandValidator _validator;
+        private CreateIngridientCommandValidator validator;
 
        [SetUp]
         public void SetUp()
         {
-            _validator = new CreateIngridientCommandValidator();
+            validator = new CreateIngridientCommandValidator();
         }
 
         [Test]
@@ -21,10 +21,11 @@ namespace Application.FluentValidator.Tests
         {
             var model = new CreateIngridientCommand
             {
+                Id = Guid.NewGuid(),
                 Name = "asdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvaasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvsdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcvasdfghyxcv"
             };
 
-            var result = _validator.TestValidate(model);
+            var result = validator.TestValidate(model);
             result.ShouldHaveValidationErrorFor(model => model.Name);
         }
     }

@@ -5,20 +5,20 @@ using MediatR;
 
 namespace Application.Ingridients.Commands.CreateIngridient
 {
-    public  record CreateIngridientCommand : IRequest<int>
+    public  record CreateIngridientCommand : IRequest<Guid>
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string? Name { get; set; }
     }
 
-    public class CreateIngridientCommandHandler : IRequestHandler<CreateIngridientCommand, int>
+    public class CreateIngridientCommandHandler : IRequestHandler<CreateIngridientCommand, Guid>
     {
         private readonly IApplicationDbContext _context;
         public CreateIngridientCommandHandler(IApplicationDbContext context)
         {
             _context = context;
         }
-        public async Task<int> Handle(CreateIngridientCommand request, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(CreateIngridientCommand request, CancellationToken cancellationToken)
         {
             var entity = new Ingridient
             {
