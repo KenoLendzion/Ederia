@@ -23,7 +23,6 @@
     <Folder Include="RecipeSteps\Commands\UpdateRecipeStep\" />
     <Folder Include="RecipeSteps\EventHandlers\" />
     <Folder Include="RecipeSteps\Queries\Get\" />
-    <Folder Include="Recipes\Commands\UpdateRecipe\" />
     <Folder Include="Recipes\EventHandlers\" />
     <Folder Include="Recipes\Queries\Get\" />
   </ItemGroup>
