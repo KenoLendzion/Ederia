@@ -18,7 +18,12 @@ namespace Application.Ingridients.Commands.UpdateIngridient
 
     public class UpdateIngridientCommandHandler : IRequestHandler<UpdateIngridientCommand, Unit>
     {
-        IApplicationDbContext _context;
+        private readonly IApplicationDbContext _context;
+
+        public UpdateIngridientCommandHandler(IApplicationDbContext context)
+        {
+            _context = context; 
+        }
         public async Task<Unit> Handle(UpdateIngridientCommand request, CancellationToken cancellationToken)
         {
             var entity = await _context.Ingridients.FindAsync(request.Id, cancellationToken);
