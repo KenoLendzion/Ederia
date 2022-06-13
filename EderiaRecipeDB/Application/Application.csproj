@@ -12,7 +12,6 @@
     <Folder Include="Common\Models\" />
     <Folder Include="Common\Security\" />
     <Folder Include="Ingridients\Commands\DeleteIngridient\" />
-    <Folder Include="Ingridients\Commands\UpdateIngridient\" />
     <Folder Include="Ingridients\EventHandlers\" />
     <Folder Include="Ingridients\Queries\Get\" />
     <Folder Include="RecipeIngridients\Commands\DeleteRecipeIngridient\" />
