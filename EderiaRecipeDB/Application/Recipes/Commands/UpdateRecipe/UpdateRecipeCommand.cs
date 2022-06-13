@@ -20,7 +20,13 @@ namespace Application.Recipes.Commands.UpdateRecipe
 
     public class UpdateRecipeCommandHandler : IRequestHandler<UpdateRecipeCommand, Unit>
     {
-        IApplicationDbContext _context;
+        private readonly IApplicationDbContext _context;
+
+        public UpdateRecipeCommandHandler(IApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         public async Task<Unit> Handle(UpdateRecipeCommand request, CancellationToken cancellationToken)
         {
             var entity = await _context.Recipes.FindAsync(new object[] { request.Id }, cancellationToken);
