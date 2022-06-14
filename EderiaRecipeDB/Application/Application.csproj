@@ -12,18 +12,9 @@
     <Folder Include="Common\Models\" />
     <Folder Include="Common\Security\" />
     <Folder Include="Ingridients\Commands\DeleteIngridient\" />
-    <Folder Include="Ingridients\EventHandlers\" />
-    <Folder Include="Ingridients\Queries\Get\" />
     <Folder Include="RecipeIngridients\Commands\DeleteRecipeIngridient\" />
     <Folder Include="RecipeIngridients\Commands\UpdateRecipeIngridient\" />
-    <Folder Include="RecipeIngridients\EventHandlers\" />
-    <Folder Include="RecipeIngridients\Queries\Get\" />
     <Folder Include="RecipeSteps\Commands\DeleteRecipeStep\" />
-    <Folder Include="RecipeSteps\Commands\UpdateRecipeStep\" />
-    <Folder Include="RecipeSteps\EventHandlers\" />
-    <Folder Include="RecipeSteps\Queries\Get\" />
-    <Folder Include="Recipes\EventHandlers\" />
-    <Folder Include="Recipes\Queries\Get\" />
   </ItemGroup>
 
   <ItemGroup>
