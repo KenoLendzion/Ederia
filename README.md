@@ -1,13 +1,15 @@
 # Ederia
-This is a repository for a private project to teach myself Clean Architecture, programming patterns like (CQRS, Value Object, Dependency Injection, Mediator Pattern, etc ...) and various technologies/NuGets like (Automapper, MediatR, Entity Framework Core etc...).
+This is a repository for a private project to teach myself Clean Architecture, programming patterns like (CQRS, Value Object, Dependency Injection, Mediator Pattern, etc ...) and various technologies/NuGets like (Automapper, MediatR, Entity Framework Core, GitHub etc...).
 
 It is still in heavy Development and might thow errors in certain areas. 
 
-All code is heavly based on https://github.com/jasontaylordev/CleanArchitecture. 
+All code is heavly based on https://github.com/jasontaylordev/CleanArchitecture. Which is a wonderfull template and explanation of everything mentioned above.
 
-In general I want to create the backend and access for Database that stores recipes. So the recipes could be accessed or changed from a console window, Blazor website or any other Gui.  
+In general I want to create the backend and access for a database that stores recipes. So the recipes could be accessed or changed from a console window, Blazor website or any other Gui.  
 
 Suggestions and constructive criticism are allways welcome. 
+
+/* WORK IN PROGRESS */
 
 DOMAIN: TBD
 APPLICATION: TBD
