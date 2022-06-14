@@ -15,7 +15,7 @@ using MediatR;
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddMediatR(Assembly.GetExecutingAssembly());
             
-            //Add Behaviors here
+            // TODO Add Behaviors here
 
         return services;
         }
