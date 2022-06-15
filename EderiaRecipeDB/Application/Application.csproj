@@ -13,7 +13,6 @@
     <Folder Include="Common\Security\" />
     <Folder Include="Ingridients\Commands\DeleteIngridient\" />
     <Folder Include="RecipeIngridients\Commands\DeleteRecipeIngridient\" />
-    <Folder Include="RecipeIngridients\Commands\UpdateRecipeIngridient\" />
     <Folder Include="RecipeSteps\Commands\DeleteRecipeStep\" />
   </ItemGroup>
 
