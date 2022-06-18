@@ -11,9 +11,7 @@
     <Folder Include="Common\Mappings\" />
     <Folder Include="Common\Models\" />
     <Folder Include="Common\Security\" />
-    <Folder Include="Ingridients\Commands\DeleteIngridient\" />
     <Folder Include="RecipeIngridients\Commands\DeleteRecipeIngridient\" />
-    <Folder Include="RecipeSteps\Commands\DeleteRecipeStep\" />
   </ItemGroup>
 
   <ItemGroup>
