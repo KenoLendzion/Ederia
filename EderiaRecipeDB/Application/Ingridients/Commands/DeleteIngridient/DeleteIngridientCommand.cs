@@ -26,15 +26,15 @@ namespace Application.Ingridients.Commands.DeleteIngridient
 
         public async Task<Unit> Handle(DeleteIngridientCommand request, CancellationToken cancellationToken)
         {
-            var enttity = await _context.Ingridients.FindAsync(new object[] { request.Id }, cancellationToken);
+            var entity = await _context.Ingridients.FindAsync(new object[] { request.Id }, cancellationToken);
             
-            if( enttity == null )
+            if( entity == null )
             {
                 throw new NotFoundException();
             }
 
-            _context.Ingridients.Remove(enttity);
-            enttity.AddDomainEvent(new IngridientDeletedEvent(enttity));
+            _context.Ingridients.Remove(entity);
+            entity.AddDomainEvent(new IngridientDeletedEvent(entity));
 
             return Unit.Value;
         }
