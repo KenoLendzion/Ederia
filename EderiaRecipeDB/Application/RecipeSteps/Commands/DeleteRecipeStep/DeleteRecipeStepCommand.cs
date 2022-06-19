@@ -1,13 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Application.Common.Exceptions;
+using Application.Common.Interfaces;
+using MediatR;
+using Domain.Events;
 
 namespace Application.RecipeSteps.Commands.DeleteRecipeStep
 {
-    internal class DeleteRecipeStepCommand
+    public record DeleteRecipeStepCommand : IRequest
     {
-        // TODO DeleteRecipeStepCommand
+        public int Id { get; set; }
+    }
+
+    public class DeleteRecipeStepCommandHandler : IRequestHandler<DeleteRecipeStepCommand>
+    {
+        IApplicationDbContext _context;
+
+        public DeleteRecipeStepCommandHandler(IApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<Unit> Handle(DeleteRecipeStepCommand request, CancellationToken cancellationToken)
+        {
+            var entity = await _context.RecipeSteps.FindAsync(new object[] { request.Id }, cancellationToken);
+
+            if (entity == null)
+            {
+                throw new NotFoundException();
+            }
+
+            _context.RecipeSteps.Remove(entity);
+            entity.AddDomainEvent(new RecipeStepDeletedEvent(entity));
+            await _context.SaveChangesAsync(cancellationToken);
+
+            return Unit.Value;
+        }
     }
 }
