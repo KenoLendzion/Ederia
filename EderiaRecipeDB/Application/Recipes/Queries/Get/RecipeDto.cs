@@ -12,8 +12,8 @@ namespace Application.Recipes.Queries.Get
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Description { get; set; }
-        public int KcalPerPortion { get; set; }
-        public int CookingTimeInMinutes { get; set; }
+        public string? Description { get; set; }
+        public int? KcalPerPortion { get; set; }
+        public int? CookingTimeInMinutes { get; set; }
     }
 }
