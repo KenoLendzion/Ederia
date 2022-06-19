@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Recipes.Queries.Get
 {
-    internal class GetRecipeById
+    internal class GetRecipeByIdQuery
     {
         // TODO GetRecipeById
     }
