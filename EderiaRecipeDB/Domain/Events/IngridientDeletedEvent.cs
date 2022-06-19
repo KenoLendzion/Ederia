@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Events
 {
-    public class IngridientDeletedEvent
+    public class IngridientDeletedEvent : BaseEvent
     {
         public Ingridient Ingridient { get; set; }
         public IngridientDeletedEvent(Ingridient ingridient)
