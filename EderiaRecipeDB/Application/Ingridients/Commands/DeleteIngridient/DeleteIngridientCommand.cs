@@ -17,7 +17,7 @@ namespace Application.Ingridients.Commands.DeleteIngridient
 
     public class DeleteIngridentCommandHandler : IRequestHandler<DeleteIngridientCommand>
     {
-        IApplicationDbContext _context;
+        private readonly IApplicationDbContext _context;
 
         public DeleteIngridentCommandHandler(IApplicationDbContext context)
         {

@@ -19,7 +19,7 @@ namespace Application.RecipeSteps.Commands.UpdateRecipeStep
 
     public class UpdateRecipeStepCommandHandler : IRequestHandler<UpdateRecipeStepCommand, Unit>
     {
-        IApplicationDbContext _context;
+        private readonly IApplicationDbContext _context;
 
         public UpdateRecipeStepCommandHandler(IApplicationDbContext context)
         {

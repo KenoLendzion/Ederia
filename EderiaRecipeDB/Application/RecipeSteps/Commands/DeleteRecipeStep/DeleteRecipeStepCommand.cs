@@ -12,7 +12,7 @@ namespace Application.RecipeSteps.Commands.DeleteRecipeStep
 
     public class DeleteRecipeStepCommandHandler : IRequestHandler<DeleteRecipeStepCommand>
     {
-        IApplicationDbContext _context;
+        private readonly IApplicationDbContext _context;
 
         public DeleteRecipeStepCommandHandler(IApplicationDbContext context)
         {

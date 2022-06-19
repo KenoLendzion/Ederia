@@ -12,7 +12,7 @@ namespace Application.RecipeIngridients.Commands.DeleteRecipeIngridient
 
     public class DeleteRecipeIngridientCommandHandler : IRequestHandler<DeleteRecipeIngridientCommand>
     {
-        IApplicationDbContext _context;
+        private readonly IApplicationDbContext _context;
 
         public DeleteRecipeIngridientCommandHandler(IApplicationDbContext context)
         {

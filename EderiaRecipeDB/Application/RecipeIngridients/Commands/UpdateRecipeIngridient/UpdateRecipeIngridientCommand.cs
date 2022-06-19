@@ -19,7 +19,7 @@ namespace Application.RecipeIngridients.Commands.UpdateRecipeIngridient
 
     public class UpdateRecipeIngridientCommandHandler : IRequestHandler<UpdateRecipeIngridientCommand, Unit>
     {
-        IApplicationDbContext _context;
+        private readonly IApplicationDbContext _context;
 
         public UpdateRecipeIngridientCommandHandler(IApplicationDbContext context)
         {
