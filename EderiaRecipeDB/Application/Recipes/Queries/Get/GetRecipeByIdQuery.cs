@@ -22,8 +22,7 @@ namespace Application.Recipes.Queries.Get
 
         public async Task<RecipeDto> Handle(GetRecipeByIdQuery request, CancellationToken cancellationToken)
         {
-            var entity = _context.Recipes
-                .First(p => p.Id == request.Id);
+            var entity = await _context.Recipes.FindAsync(request.Id);
 
             if (entity == null)
             {
