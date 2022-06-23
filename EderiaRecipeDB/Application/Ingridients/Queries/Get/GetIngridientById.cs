@@ -32,7 +32,7 @@ namespace Application.Ingridients.Queries.Get
                 throw new NotFoundException();
             }
 
-            IngridientDto dto = new IngridientDto
+            var dto = new IngridientDto
             {
                 Id = entity.Id,
                 Name = entity.Name,
