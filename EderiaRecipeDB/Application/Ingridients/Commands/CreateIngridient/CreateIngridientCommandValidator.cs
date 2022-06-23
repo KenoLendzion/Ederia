@@ -6,7 +6,7 @@ namespace Application.Ingridients.Commands.CreateIngridient
     {
         public CreateIngridientCommandValidator()
         {
-            RuleFor(v => v.Id).NotEmpty();
+            // TODO CreateIngridientCommandValidator
             RuleFor(v => v.Name).MaximumLength(300);
         }
     }

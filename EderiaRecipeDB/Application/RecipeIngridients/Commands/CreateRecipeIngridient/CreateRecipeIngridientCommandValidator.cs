@@ -6,9 +6,9 @@ namespace Application.RecipeIngridients.Commands.CreateRecipeIngridient
     {
         public CreateRecipeIngridientCommandValidator()
         {
-            RuleFor(v => v.id).NotEmpty();
-            RuleFor(v => v.RecipeId).NotEmpty();
-            RuleFor(v => v.IngridientId).NotEmpty();
+            RuleFor(v => v.RecipeId).GreaterThan(0);
+            RuleFor(v => v.IngridientId).GreaterThan(0);
+            RuleFor(v => v.Amount).GreaterThanOrEqualTo(0).NotEmpty();
         }
     }
 }
