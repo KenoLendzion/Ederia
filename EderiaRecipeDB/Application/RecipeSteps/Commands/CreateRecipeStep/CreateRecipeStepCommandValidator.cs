@@ -6,7 +6,7 @@ namespace Application.RecipeSteps.Commands.CreateRecipeStep
     {
         public CreateRecipeStepCommandValidator()
         {
-            RuleFor(v => v.Id).NotEmpty();
+            // TODO CreateRecipeStepCommandValidator
             RuleFor(v => v.RecipeId).NotEmpty();
             RuleFor(v => v.InstructionText).NotEmpty();
             RuleFor(v => v.SequenceNumber).NotEmpty();
