@@ -9,13 +9,14 @@ namespace Application.RecipeIngridients.Commands.CreateRecipeIngridient
     {
         public int RecipeId { get; set; }
         public int IngridientId { get; set; }
+        public int? Amount { get; set; } = 0;
     }
 
-    public class CreateRecuoeIngridientHandler : IRequestHandler<CreateRecipeIngridientCommand, int>
+    public class CreateRecipeIngridientHandler : IRequestHandler<CreateRecipeIngridientCommand, int>
     {
         private readonly IApplicationDbContext _context;
 
-        public CreateRecuoeIngridientHandler(IApplicationDbContext context)
+        public CreateRecipeIngridientHandler(IApplicationDbContext context)
         {
             _context = context; 
         }
@@ -25,7 +26,8 @@ namespace Application.RecipeIngridients.Commands.CreateRecipeIngridient
             var entity = new RecipeIngridient
             {
                 RecipeId = request.RecipeId,
-                IngridientId = request.IngridientId
+                IngridientId = request.IngridientId,
+                Amount = request.Amount
             };
 
             entity.AddDomainEvent(new RecipeIngridientCreatedEvent(entity));
