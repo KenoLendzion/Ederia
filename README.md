@@ -19,4 +19,5 @@ GUI: TBD
 Tests: TBD
 
 Very first version of a database. It's kept simple to reduce complexity but it should not be a problem to expand at a later point in time.
-![image](https://user-images.githubusercontent.com/23700090/172070591-7a6d38c0-6706-4e1b-914d-14a29652c9d7.png)
+![image](https://user-images.githubusercontent.com/23700090/175359458-f5f79f57-c60c-4bfd-ac9a-fbcfc05558e7.png)
+
