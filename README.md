@@ -1,5 +1,5 @@
 # Ederia
-This is a repository for a private project to teach myself Clean Architecture, programming patterns like (CQRS, Value Object, Dependency Injection, Mediator Pattern, etc ...) and various technologies/NuGets like (Automapper, MediatR, Entity Framework Core, GitHub etc...).
+This is a repository for a breakable toy project to teach myself Clean Architecture, programming patterns like (CQRS, Value Object, Dependency Injection, Mediator Pattern, etc ...) and various technologies/NuGets like (Automapper, MediatR, Entity Framework Core, GitHub etc...).
 
 It is still in heavy Development and might thow errors in certain areas. 
 
