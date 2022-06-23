@@ -10,7 +10,9 @@ namespace Application.FluentValidator.Tests
     {
         private CreateIngridientCommandValidator validator;
 
-       [SetUp]
+        // TODO Change all tests
+        
+        [SetUp]
         public void SetUp()
         {
             validator = new CreateIngridientCommandValidator();

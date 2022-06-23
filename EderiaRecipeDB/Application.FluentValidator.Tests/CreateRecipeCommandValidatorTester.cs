@@ -9,6 +9,7 @@ namespace Application.FluentValidation.Tests
     [TestFixture]
     public class CreateRecipeCommandValidatorTester
     {
+        // TODO Change all tests
         private CreateRecipeCommandValidator validator;
 
         [SetUp]
