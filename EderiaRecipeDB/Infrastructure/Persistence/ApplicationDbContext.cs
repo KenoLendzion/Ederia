@@ -27,7 +27,6 @@ namespace Infrastructure.Persistence
             _auditableEntitySaveChangesInterceptor = auditableEntitySaveChangesInterceptor;
         }
 
-
         public DbSet<Recipe> Recipes => Set<Recipe>();
 
         public DbSet<Ingridient> Ingridients => Set<Ingridient>();
