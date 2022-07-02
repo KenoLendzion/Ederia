@@ -48,7 +48,7 @@ namespace Infrastructure.Persistence
                 await _roleManager.CreateAsync(administratorRole);
             }
 
-            var administrator = new ApplicationUser { UserName = "administrator@localhost", EmailTokenProvider = "administrator@localhost" };
+            var administrator = new ApplicationUser { UserName = "administrator@localhost", Email = "administrator@localhost" };
 
             if(_userManager.Users.All(u => u.UserName != administrator.UserName))
             {
