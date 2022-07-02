@@ -39,6 +39,19 @@ namespace Infrastructure.Persistence
             }
         }
 
+        public async Task SeedAsync()
+        {
+            try
+            {
+                await TrySeedAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occureed while seeding the database.");
+                throw;
+            }
+        }
+
         public async Task TrySeedAsync()
         {
             var administratorRole = new IdentityRole("Administrator");
