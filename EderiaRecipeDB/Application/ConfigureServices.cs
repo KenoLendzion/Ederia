@@ -17,7 +17,7 @@ using MediatR;
             
             // TODO Add Behaviors here
 
-        return services;
+            return services;
         }
     }
 
