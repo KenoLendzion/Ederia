@@ -9,7 +9,7 @@ using FluentValidation;
 using MediatR;
     public static class ConfigureServices
     {
-        public static IServiceCollection AppApplicationServices(this IServiceCollection services)
+        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
