@@ -1,6 +1,7 @@
 ﻿using Application.Common.Interfaces;
 using Infrastructure.Identity;
 using Infrastructure.Persistence;
+using Infrastructure.Persistence.Interceptors;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -17,9 +18,9 @@ namespace Infrastructure
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
-            // TODO AuditableEntitySaveChangesInterceptor
+            services.AddScoped<AuditableEntitySaveChangesInterceptor>();
 
-            if(configuration.GetValue<bool>("UseInMemoryDatabse"))
+            if(configuration.GetValue<bool>("UseInMemoryDatabase") )
             {
                 services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseInMemoryDatabase("EderiaDb"));
